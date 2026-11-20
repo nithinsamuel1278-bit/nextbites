@@ -14,7 +14,10 @@ export default async function RecipePage({
   const { id } = await params;
   const recipe = getRecipe(id);
 
-  if (!recipe) notFound();
+    if (!recipe) {
+    // Unknown recipe id: render app/not-found.tsx (404)
+    notFound();
+  }
 
   return (
     <main>
