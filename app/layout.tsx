@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Page title and description shown in the browser tab and in search results
 export const metadata: Metadata = {
   title: "NextBites · Quick recipes you'll actually cook",
   description: "A tiny recipe app built with Next.js.",
